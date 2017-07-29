@@ -293,8 +293,8 @@ tuor:visited {
 
 .skills_area {
     background: #e4e4e4;
-    padding-bottom: 140px;
-    padding-top: 120px;
+    padding-bottom: 100px;
+    padding-top: 50px;
 }
 .skills_title {
     padding-bottom: 30px;
@@ -327,15 +327,15 @@ tuor:visited {
 .skills {} .skills iframe {
     width: 100%;
     border: 1px solid #999999;
-    padding: 5px;
+    /*padding: 5px;*/
 }
 
 .level {
   display: flex;
   flex-direction: row;
+  margin-top: -15px;
 }
 .level-active{
-  flex-grow: 1;
   margin-top:15px;
   width : 25px;
   height: 15px;
@@ -351,8 +351,7 @@ tuor:visited {
   -webkit-transform: skew(-25deg);
   -moz-transform: skew(-25deg);
   -0-transform: skew(-25deg);
-  background: transparent;
-  border-radius: 1px solid black;
+  background: #999999;
 }
 /*---------------------------------------
    SECTION TESTIMONIAL
