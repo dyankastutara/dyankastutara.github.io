@@ -40,7 +40,7 @@ p {
 -----------------------------------------*/
 
 .section_title {
-    padding-top: 90px;
+    padding-top: 50px;
     padding-bottom: 50px;
 }
 .section_title h2 {
@@ -57,7 +57,7 @@ p {
     bottom: -20px;
     width: 60px;
     height: 1px;
-    background-color: #f39c12;
+    background-color: #4CAF50;
     left: 50%;
     margin-left: -30px;
 }
@@ -99,7 +99,7 @@ p {
         font-family: 'Raleway', sans-serif;
     }
     .navbar-default .navbar-nav>li>a:hover {
-        color: #f39c12;
+        color: #4CAF50;
     }
     .navbar-default .navbar-nav>li>a:focus {
         color: #B5B5B5;
@@ -138,7 +138,7 @@ p {
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
     background: transparent;
-    color: #f39c12;
+    color: #4CAF50;
 }
 .header {
   background: url(../img/home2.png);
@@ -146,7 +146,7 @@ p {
   background-repeat: no-repeat;
 }
 .header .section_overlay {
-    background-color: rgba(33, 33, 33, .75);
+    /*background-color: rgba(33, 33, 33, .75);*/
 }
 .logo{
     padding-bottom: 50px;
@@ -155,16 +155,16 @@ p {
     text-align: left;
 }
 .home-image{
-    text-align: left;
+    text-align: right;
 }
 
 @media (max-width: 768px){
     .home-image{
-        /*display: none;*/
-        text-align: center;
+        display:none;
+        width:50%;
     }
     .home_text{
-        text-align: center;
+        text-align: left;
     }
 
 }
@@ -174,7 +174,7 @@ p {
     font-size: 65px;
     font-weight: 800;
     line-height: 35px;
-    padding-top: 30px
+    padding-top: 30px;
 }
 .home_text p {
     color: #fff;
@@ -184,33 +184,6 @@ p {
     font-weight: 300;
 }
 
-.download-btn {
-    margin-top: 90px;
-    margin-bottom: 50px
-}
-.home-btn,
-.home-btn:focus,
-.home-btn:active,
-.home-btn:visited {
-    background: transparent;
-    border-color: #f39c12;
-    color: #f39c12;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    font-size: 19px;
-    text-transform: uppercase;
-    border-radius: 3px;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
-}
-.home-btn:hover {
-    background-color: #f39c12;
-    color: #fff;
-}
 .tuor,
 .tuor:focus,
 tuor:active,
@@ -232,7 +205,7 @@ tuor:visited {
 .tuor i {
     font-size: 20px;
     padding-left: 5px;
-    color: #f39c12;
+    color: #4CAF50;
 }
 
 
@@ -258,6 +231,7 @@ tuor:visited {
     font-size: 30px;
     line-height: 37px;
     position: relative;
+
 }
 .inner_about_title h2:after {
     content: "";
@@ -265,7 +239,7 @@ tuor:visited {
     bottom: -12px;
     left: 0;
     width: 70px;
-    background: #f39c12;
+    background: #4CAF50;
     height: 1px;
 }
 .inner_about_title p {
@@ -302,7 +276,7 @@ tuor:visited {
     font-size: 15px;
 }
 .single_about_area:hover div i {
-    color: #f39c12;
+    color: #4CAF50;
 }
 .about_phone img {          
   width: 80%;
@@ -339,7 +313,7 @@ tuor:visited {
     bottom: -12px;
     left: 0;
     width: 70px;
-    background: #f39c12;
+    background: #4CAF50;
     height: 1px;
 }
 .skills_title p {
@@ -349,30 +323,36 @@ tuor:visited {
     color: #333;
     font-weight: 300;
 }
-.btn-skills,
-.btn-skills:active,
-.btn-skills:focus,
-.btn-skills:visited {
-    background: transparent;
-    border: 1px solid #929292;
-    color: #686868;
-    border-radius: 3px;
-    padding: 12px 35px;
-    text-transform: uppercase;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
-}
-.btn-skills:hover {
-    background: #f39c12;
-    color: #fff;
-    border: 1px solid #f39c12;
-}
+
 .skills {} .skills iframe {
     width: 100%;
     border: 1px solid #999999;
     padding: 5px;
+}
+
+.level {
+  display: flex;
+  flex-direction: row;
+}
+.level-active{
+  flex-grow: 1;
+  margin-top:15px;
+  width : 25px;
+  height: 15px;
+  -webkit-transform: skew(-25deg);
+  -moz-transform: skew(-25deg);
+  -0-transform: skew(-25deg);
+  background: #4CAF50;
+}
+.level-deactived{
+  margin-top:15px;
+  width : 25px;
+  height: 15px;
+  -webkit-transform: skew(-25deg);
+  -moz-transform: skew(-25deg);
+  -0-transform: skew(-25deg);
+  background: transparent;
+  border-radius: 1px solid black;
 }
 /*---------------------------------------
    SECTION TESTIMONIAL
@@ -394,7 +374,7 @@ tuor:visited {
     background-repeat: no-repeat;
 }
 .testimonial .section_overlay {
-    background: rgba(0, 0, 0, .6);
+    /*background: rgba(0, 0, 0, .6);*/
     padding-top: 80px;
     padding-bottom: 80px;
 }
@@ -402,7 +382,7 @@ tuor:visited {
     bottom: -8px;
 }
 div.carousel-inner .item img {
-    border: 2px solid #f39c12;
+    border: 2px solid #4CAF50;
     border-radius: 50%;
     padding: 3px;
 }
@@ -416,14 +396,14 @@ div.carousel-inner .item img {
     padding-top: 50px;
 }
 .testimonial_caption h2 {
-    color: #f39c12;
+    color: #4CAF50;
     text-transform: uppercase;
     font-weight: 900;
     font-size: 30px;
     margin-top: 25px;
 }
 .testimonial_caption h4 {
-    color: #f39c12
+    color: #4CAF50
 }
 .testimonial_caption h4 span {
     color: #D8D8D8;
@@ -433,14 +413,14 @@ div.carousel-inner .item img {
 .testimonial ol.carousel-indicators li {
     width: 12px;
     height: 12px;
-    border: 1px solid #f39c12;
+    border: 1px solid #4CAF50;
     margin: 1PX
 }
 .testimonial ol.carousel-indicators li.active {
     width: 12px;
     height: 12px;
-    border: 0px solid #f39c12;
-    background: #f39c12;
+    border: 0px solid #4CAF50;
+    background: #4CAF50;
 }
 /*---------------------------------------
    SECTION FEATURES
@@ -465,7 +445,7 @@ div.carousel-inner .item img {
 .right_single_feature div {
     position: absolute;
     font-size: 40px;
-    color: #f39c12;
+    color: #4CAF50;
     left: 0;
     width: 90px;
     height: 90px;
@@ -480,7 +460,7 @@ div.carousel-inner .item img {
     color: #333333;
 }
 .right_single_feature h3 span {
-    color: #f39c12;
+    color: #4CAF50;
 }
 .right_single_feature p {
     color: #333;
@@ -500,7 +480,7 @@ div.carousel-inner .item img {
 .left_single_feature div {
     position: absolute;
     font-size: 40px;
-    color: #f39c12;
+    color: #4CAF50;
     right: 0;
     width: 90px;
     height: 90px;
@@ -515,7 +495,7 @@ div.carousel-inner .item img {
     color: #333333;
 }
 .left_single_feature h3 span {
-    color: #f39c12;
+    color: #4CAF50;
 }
 .left_single_feature p {
     color: #333;
@@ -565,8 +545,8 @@ div.carousel-inner .item img {
 .btn-action:active,
 .btn-action:focus,
 .btn-action:visited {
-    background: #f39c12;
-    border: 1px solid #f39c12;
+    background: #4CAF50;
+    border: 1px solid #4CAF50;
     color: #fff;
     border-radius: 3px;
     padding: 15px 35px;
@@ -603,12 +583,12 @@ div.carousel-inner .item img {
     -moz-border-radius: 20px;
     border-radius: 20px;
     background: transparent;
-    border: 1px solid #f39c12;
+    border: 1px solid #4CAF50;
 }
 .owl-theme .owl-controls .owl-page.active span,
 .owl-theme .owl-controls.clickable .owl-page:hover span {
     opacity: 1;
-    background: #f39c12;
+    background: #4CAF50;
 }
 /*---------------------------------------
    SECTION FUN FACTS
@@ -621,13 +601,13 @@ div.carousel-inner .item img {
 .fun_facts .section_overlay {
     padding-top: 120px;
     padding-bottom: 120px;
-    background: rgba(0, 0, 0, .4);
+    /*background: rgba(0, 0, 0, .4);*/
 }
 .single_fun_facts {
     font-family: 'Source Sans Pro', sans-serif;
 }
 .single_fun_facts i {
-    color: #f39c12;
+    color: #4CAF50;
     font-size: 60px;
     ;
 }
@@ -692,7 +672,7 @@ div.carousel-inner .item img {
     transition: all 1s;
 }
 .single_store i {
-    color: #f39c12;
+    color: #4CAF50;
     text-align: center;
     opacity: 1;
     font-size: 40px;
@@ -769,8 +749,8 @@ div.carousel-inner .item img {
 
 }
 .contact_form .form-control:focus {
-    border: 1px solid #f39c12;
-    border-color: #f39c12;
+    border: 1px solid #4CAF50;
+    border-color: #4CAF50;
     outline: 0px none;
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.075) inset, 0px 0px 0px rgba(102, 175, 233, 0.6);
 }
@@ -795,13 +775,13 @@ div.carousel-inner .item img {
 .submit-btn:focus,
 .submit-btn:visited {
     background-color: transparent;
-    border: 1px solid #f39c12;
+    border: 1px solid #4CAF50;
     border-radius: 4px;
     width: 100%;
     height: 50px;
     text-transform: uppercase;
     font-size: 18px;
-    color: #f39c12;
+    color: #4CAF50;
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
     -o-transition: all 1s;
@@ -809,9 +789,9 @@ div.carousel-inner .item img {
     outline: 0px !important;
 }
 .submit-btn:hover {
-    background-color: #f39c12;
+    background-color: #4CAF50;
     color: #fff;
-    border-color: #f39c12;
+    border-color: #4CAF50;
 }
 .social_icons {
     padding-top: 50px;
@@ -846,12 +826,12 @@ div.carousel-inner .item img {
     font-size: 20px;
 }
 .social_icons ul li a:hover {
-    background: #f39c12;
-    border: 1px solid #f39c12;
+    background: #4CAF50;
+    border: 1px solid #4CAF50;
     color: #fff
 }
 .error {
-    color: #f39c12;
+    color: #4CAF50;
     display: block;
     padding-bottom: 15px;
     font-size: 18px
@@ -891,7 +871,7 @@ div.carousel-inner .item img {
 }
 .subscribe .section_overlay {
     padding-bottom: 70px;
-    background: transparent
+    /*background: transparent*/
 }
 .subscribe .section_title h2{
   color: #eaeaea;
@@ -928,12 +908,12 @@ div.carousel-inner .item img {
 .subs-btn:visited {
     width: 200px;
     background: transparent;
-    border: 1px solid #f39c12;
+    border: 1px solid #4CAF50;
     border-radius: 4px;
     height: 45px;
     margin-left: 0px;
     margin-bottom: 1px;
-    color: #f39c12;
+    color: #4CAF50;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 17px;
@@ -944,9 +924,9 @@ div.carousel-inner .item img {
     outline: 0px !important;
 }
 .subs-btn:hover {
-    background-color: #f39c12;
+    background-color: #4CAF50;
     color: #fff;
-    border-color: #f39c12;
+    border-color: #4CAF50;
 }
 @media (min-width: 300px) {
     .subscribe_form .form-control {
@@ -971,7 +951,7 @@ div.carousel-inner .item img {
     background-color: #1A1D22;
     padding-bottom: 65px;
     padding-top: 65px;
-    border-bottom: 3px solid #f39c12;
+    border-bottom: 3px solid #4CAF50;
 }
 .copyright h2 {
     height: 0px;
@@ -988,7 +968,7 @@ div.carousel-inner .item img {
 }
 .copy_right_text p a {
     text-decoration: none;
-    color: #f39c12;
+    color: #4CAF50;
 }
 .copy_right_text p span {
     font-weight: 300;
@@ -997,7 +977,7 @@ div.carousel-inner .item img {
     text-align: right;
 }
 .scroll_top a {
-    background: #f39c12;
+    background: #4CAF50;
     padding: 25px;
 }
 .scroll_top a i {
