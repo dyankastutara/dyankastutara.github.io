@@ -340,6 +340,15 @@ tuor:visited {
     /*padding: 5px;*/
 }
 
+@media (max-width: 568px){
+  .skills_icon{
+    display: none;
+  }
+  .skills_level{
+    margin-top: 20px;
+  }
+}
+
 .level {
   display: flex;
   flex-direction: row;
